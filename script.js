@@ -54,5 +54,21 @@ $(document).ready(function(){
        showSlide(counter2)
     }
 
+// ***********************************************************************
+    $('#submit').click(function(){
+        var userName = $("#txt1").val();
+        if (userName == "" || userName == null) {
+            alert ("fuck you");
+            return false;
+        }
+        else {
+            alert (userName);
+            return true;
+        }
+    })
+
+
     // alert("salam");
 })
+
+
