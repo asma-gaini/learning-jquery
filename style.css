@@ -1,7 +1,35 @@
-img{
+.image img{
     width: 400px;
     height: 300px;
     padding: 20px;
     border: 5px solid black;
     margin: 5px;
+}
+
+.image2 img{
+    width: 400px;
+    height: 300px;
+    padding: 20px;
+    border: 5px solid black;
+    margin: 5px;
+}
+
+body{
+    height: 4000px;
+}
+
+.car1{
+    position: fixed;
+    bottom: 0px;
+    width: 100px;
+    height: 80px;
+    left: -90px;
+}
+
+.car2{
+    position: fixed;
+    bottom: 0px;
+    width: 100px;
+    height: 80px;
+    left: -90px;
 }

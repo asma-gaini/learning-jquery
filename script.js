@@ -67,6 +67,33 @@ $(document).ready(function(){
         }
     })
 
+// ***********************************************************************
+
+    var oldTop = 0;
+    $(document).on("scroll" , function(){
+        var top = $(document).scrollTop();
+        if (oldTop < top) {
+            var leftCar1 = parseInt($(".car1").css("left"));
+            leftCar1 += 15;
+            $(".car1").css("left" , leftCar1+"px");
+
+            var leftCar2 = parseInt($(".car2").css("left"));
+            leftCar2 += 13;
+            $(".car2").css("left" , leftCar2+"px");
+        }
+        else {
+            var leftCar1 = parseInt($(".car1").css("left"));
+            leftCar1 -= 15;
+            $(".car1").css("left" , leftCar1+"px");
+
+            var leftCar2 = parseInt($(".car2").css("left"));
+            leftCar2 -= 13;
+            $(".car2").css("left" , leftCar2+"px");
+        }
+    
+
+         oldTop = $(document).scrollTop(); 
+    })
 
     // alert("salam");
 })
