@@ -55,6 +55,7 @@ $(document).ready(function(){
     }
 
 // ***********************************************************************
+
     $('#submit').click(function(){
         var userName = $("#txt1").val();
         if (userName == "" || userName == null) {
@@ -93,6 +94,14 @@ $(document).ready(function(){
     
 
          oldTop = $(document).scrollTop(); 
+    })
+
+// ***********************************************************************
+
+    $(".tabs>div").first().siblings("div").hide();
+    $(".tabs>span").click(function(e){
+        var id = $(this).attr("data-info");
+        $("#" + id).show().siblings("div").hide();
     })
 
     // alert("salam");
